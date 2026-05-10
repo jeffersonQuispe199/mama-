@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de la Madre</title>
+    <link rel="stylesheet" href="mami .css">
+</head>
+<body>
+    <div class="background-decor"></div>
+    
+    <main class="container">
+        <div id="main-card" class="glass-card">
+            <h1 class="title">Para las Reinas de mi Vida</h1>
+            <p class="subtitle">Selecciona a quién va dirigido este detalle :</p>
+            
+            <div class="grid-layout">
+                <button class="btn-visual" onclick="mostrarMensaje('madre')">
+                    <div class="img-container">
+                        <img src="madre.jpg" alt="Mi Madre">
+                    </div>
+                    <div class="btn-content">
+                        <span class="btn-title">Para mi Madre :)</span>
+                        <span class="btn-subtitle">Para mi MAMITA :)</span>
+                    </div>
+                </button>
+
+                <button class="btn-visual" onclick="mostrarMensaje('mujer')">
+                    <div class="img-container">
+                        <img src="mujer.jpg" alt="Mi Mujer">
+                    </div>
+                    <div class="btn-content">
+                        <span class="btn-title">Para mi MUJER:)</span>
+                        <span class="btn-subtitle">Mi COMPAÑERA Y AMOR :)</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div id="message-card" class="glass-card hidden">
+            <h2 id="recipient-name"></h2>
+            <p id="special-text"></p>
+            <button class="btn-back" onclick="regresar()">Volver atrás no olvides que te AMO</button>
+        </div>
+    </main>
+
+    <script src="mami.js"></script>
+</body>
+</html>
